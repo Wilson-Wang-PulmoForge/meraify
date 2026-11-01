@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meraify: listen to anything</title>
+<meta name="description" content="Drop in a PDF, paste an article, or link a page. Meraify reads it aloud, entirely on your device.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="landing.css">
+</head>
+<body>
+<div class="aurora"></div><div class="sun"></div>
+<svg class="field back" id="fb" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
+<svg class="field" id="ff" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
+
+<nav class="glass" aria-label="Main">
+  <a class="brand" href="#top" aria-label="Meraify home"><svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e0608a"/><stop offset="1" stop-color="#f0925f"/></linearGradient></defs><rect width="32" height="32" rx="10" fill="url(#lg)"/><g fill="#fff"><rect x="6.2" y="12" width="3.6" height="8" rx="1.8" opacity=".75"/><rect x="11.4" y="7" width="3.6" height="18" rx="1.8"/><rect x="16.6" y="10" width="3.6" height="12" rx="1.8" opacity=".9"/><rect x="21.8" y="13" width="3.6" height="6" rx="1.8" opacity=".7"/></g></svg>Meraify</a>
+  <div class="links"><a href="#features">Features</a><a href="#download">Download</a><a href="#info">Info</a><a href="#company">Company</a></div>
+  <div class="acts"><a class="btn gl hide" href="#" data-link="login">Log in</a><a class="btn pri" href="#" data-link="try">Try for free</a><button class="menu glass" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button></div>
+</nav>
+<div class="drawer glass" id="drawer" hidden><a href="#features">Features</a><a href="#download">Download</a><a href="#info">Info</a><a href="#company">Company</a><a href="#" data-link="login">Log in</a></div>
+
+<main id="top">
+<div class="wrap hero">
+  <h1>Listen to anything.</h1>
+  <p class="lede">Drop in a PDF, paste an article, or link a page. Meraify reads it aloud in a natural voice, entirely on your device.</p>
+  <div class="cta"><a class="btn pri lg" href="#" data-link="try">Try for free</a><a class="btn gl lg" href="#download"><svg viewBox="0 0 24 24"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>Download</a></div>
+  <p class="fine">Free to start. No account needed. Your files stay with you.</p>
+
+  <!-- IMAGE 1 (hero, best at 16:9): set its path in landing.js, CONFIG.images.hero -->
+  <div class="glass frame shot"><div class="slot" data-slot="hero" data-label="Your hero image, 16:9"></div></div>
+</div>
+
+<section id="features"><div class="wrap">
+  <h2>Reading, without the screen fatigue.</h2>
+  <p class="sub">Turn a pile of documents into something you can listen to on a walk, in the garden, or with your eyes closed.</p>
+  <div class="glass feat">
+    <!-- IMAGE 2 (features, portrait or square): set its path in landing.js, CONFIG.images.feature -->
+    <div class="slot" data-slot="feature" data-label="Your feature image, portrait"></div>
+    <div class="list">
+      <div class="row"><span class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><div><h3>Private by design</h3><p>The voice runs on your device. Reading your files never means uploading them anywhere.</p></div></div>
+      <div class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h13"/></svg></span><div><h3>Follow along</h3><p>The sentence being read is highlighted and the page scrolls with it. Skip by sentence with the arrow keys.</p></div></div>
+      <div class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg></span><div><h3>Any file or page</h3><p>PDF, DOCX, TXT, Markdown and HTML. Or paste text, or link a web address.</p></div></div>
+      <div class="row"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="8" width="11" height="12" rx="2"/><path d="M9 8V6a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-3"/></svg></span><div><h3>Your library</h3><p>Everything you add is saved, so you can pick up right where you stopped.</p></div></div>
+      <div class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></svg></span><div><h3>Create</h3><p>Write in a clean editor and listen, or pull key sentences with Summary. Podcast<span class="soon">soon</span> and Quiz<span class="soon">soon</span> are on the way.</p></div></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="download"><div class="wrap">
+  <div class="glass dl">
+    <!-- IMAGE 3 (download, best at 4:3): set its path in landing.js, CONFIG.images.download -->
+    <div class="slot" data-slot="download" data-label="Your download image, 4:3"></div>
+    <div class="dlt"><h2>Take it with you.</h2><p class="sub">Use Meraify in your browser right now, or install it to open straight from your desktop.</p>
+      <div class="stack"><a class="btn pri" href="#" data-link="downloadMac">Download for Mac</a><a class="btn gl" href="#" data-link="downloadWindows">Download for Windows</a><a class="btn gl" href="#" data-link="app">Open in your browser</a></div></div>
+  </div>
+</div></section>
+
+<section id="info"><div class="wrap two">
+  <div><h2>Good to know.</h2><p class="sub">Short answers to what people ask first.</p></div>
+  <div>
+    <details class="glass"><summary>Does it work offline?</summary><p>The voice downloads the first time you use it. After that, reading runs on your device without sending your files anywhere.</p></details>
+    <details class="glass"><summary>Which files can I use?</summary><p>PDF, DOCX, TXT, Markdown and HTML. Scanned PDFs without selectable text can't be read yet.</p></details>
+    <details class="glass"><summary>How do links work?</summary><p>Web pages are fetched through the free r.jina.ai reader, because browsers can't read other sites directly. Files and pasted text never leave your device.</p></details>
+    <details class="glass"><summary>What does it cost?</summary><p>Meraify is free to try. Create an account only if you want to sync your library.</p></details>
+  </div>
+</div></section>
+
+<section id="company"><div class="wrap two">
+  <div><h2>Made for slower reading.</h2><p class="sub">We're a small team building calmer ways to take in everything you mean to read.</p></div>
+  <div class="glass about"><p>Most reading tools want your attention. Meraify wants to give it back: hand it a document, step away from the screen, and let the words come to you.</p><p>We keep voices on your device and the interface quiet, so the only thing that stands out is what you're listening to.</p><a class="btn gl" href="#" data-link="about">About us</a></div>
+</div></section>
+</main>
+
+<footer class="glass">
+  <div class="fcols">
+    <div><a class="brand" href="#top">Meraify</a><p style="color:var(--muted);font-size:14.5px;max-width:32ch;margin:12px 0 18px">Listen to anything, wherever the light is nice.</p><a class="btn pri" href="#" data-link="try">Try for free</a></div>
+    <div><h4>Product</h4><ul><li><a href="#features">Features</a></li><li><a href="#download">Download</a></li><li><a href="#" data-link="login">Log in</a></li><li><a href="#" data-link="changelog">Changelog</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="#company">About</a></li><li><a href="#" data-link="careers">Careers</a></li><li><a href="#" data-link="press">Press</a></li><li><a href="#" data-link="contact">Contact</a></li></ul></div>
+    <div><h4>Info</h4><ul><li><a href="#info">FAQ</a></li><li><a href="#" data-link="support">Support</a></li><li><a href="#" data-link="privacy">Privacy</a></li><li><a href="#" data-link="terms">Terms</a></li></ul></div>
+  </div>
+  <div class="fbot"><span>&copy; 2026 Meraify</span><span>Best enjoyed lying in a field.</span></div>
+</footer>
+
+<script src="landing.js" defer></script>
+</body>
+</html>
